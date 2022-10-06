@@ -5,8 +5,19 @@ function getComputerChoice(){
 }
 //Create function for player choice
 function getPlayerChoice(){
-    //Ask the user for a choice between rock paper scissors
+    let choice = "";
+    let loop = true;
+    while (loop){
+        //Ask the user for a choice between rock paper scissors
+        choice = prompt("Rock, paper, scissors, shoot!")
+        choice = choice.toLowerCase();
+        //evaluate if the choice is legit
+        if (choice == "rock" || choice == "paper" || choice == "scissors"){
+            loop = false;
+        }
+    }
     //Return that value
+    return choice;
 }
 //Create function for the match which asks for 2 choices
 function playRound(playerSelection, computerSelection){
