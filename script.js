@@ -1,7 +1,21 @@
 //Create function for computer choice
 function getComputerChoice(){
     //Select a random option between Rock, paper, scissors
+    let random = Math.ceil(Math.random()*3);
+    let choice = "";
+    switch(random){
+        case 1:
+            choice="rock";
+            break;
+        case 2:
+            choice="paper";
+            break;
+        case 3:
+            choice="scissors";
+            break;
+    }
     //Return that value
+    return choice;
 }
 //Create function for player choice
 function getPlayerChoice(){
