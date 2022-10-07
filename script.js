@@ -78,14 +78,15 @@ function game(){
        computerSelection = getComputerChoice();
        playerSelection = getPlayerChoice();
        winner = playRound(playerSelection, computerSelection);
+       console.log(winner);
        //Count the number of wins and loses
-       if (winner.includes("Win")){
+       if (winner.includes("win")){
         wins++;
        } 
-       else if (winner.includes("Lose")){
-        loses++;scissors
+       else if (winner.includes("lose")){
+        loses++;
        }
-       else if (winner.includes("Tie")){
+       else if (winner.includes("tie")){
         ties++;
        }
     }
