@@ -45,7 +45,7 @@ function playRound(playerSelection, computerSelection){
                 return ("You win: "+playerSelection+" beats "+computerSelection);
             }
             else if(computerSelection==="paper"){
-                return ("You lose:"+computerSelection+" beats "+playerSelection);
+                return ("You lose: "+computerSelection+" beats "+playerSelection);
             }
         }
         else if(playerSelection==="scissors"){
@@ -53,7 +53,7 @@ function playRound(playerSelection, computerSelection){
                 return ("You win: "+playerSelection+" beats "+computerSelection);
             }
             else if(computerSelection==="rock"){
-                return ("You lose:"+computerSelection+" beats "+playerSelection);
+                return ("You lose: "+computerSelection+" beats "+playerSelection);
             }
         }
         else if(playerSelection==="paper"){
@@ -61,7 +61,7 @@ function playRound(playerSelection, computerSelection){
                 return ("You win: "+playerSelection+" beats "+computerSelection);
             }
             else if(computerSelection==="scissors"){
-                return ("You lose:"+computerSelection+" beats "+playerSelection);
+                return ("You lose: "+computerSelection+" beats "+playerSelection);
             }
         }
     }
