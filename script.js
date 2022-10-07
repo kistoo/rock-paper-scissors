@@ -42,6 +42,7 @@ function playRound(playerSelection, computerSelection){
 function game(){
     let wins = 0;
     let loses = 0;
+    let ties = 0;
     let winner = "";
     //Play 5 rounds of rock paper scissors
     for (let i = 0; i < 5; i++) {
@@ -51,16 +52,22 @@ function game(){
        //Count the number of wins and loses
        if (winner.includes("Win")){
         wins++;
-       }
-       else{
+       } 
+       else if (winner.includes("Lose")){
         loses++;
+       }
+       else if (winner.includes("Tie")){
+        ties++;
        }
     }
     if (wins>loses) {
-        console.log("You won with "+wins+" wins and "+loses+" loses");
+        console.log("You won with "+wins+" wins, "+loses+" loses and "+ties+" ties");
     }
-    else {
-        console.log("You lost with "+wins+" wins and "+loses+" loses");
+    else if (wins<loses) {
+        console.log("You lost with "+wins+" wins, "+loses+" loses and "+ties+" ties");
+    }
+    else if (wins===loses) {
+        console.log("You tied with "+wins+" wins, "+loses+" loses and "+ties+" ties");
     }
 }
 //Create variables for the ia and player choices
