@@ -29,6 +29,9 @@ function getPlayerChoice(){
         if (choice == "rock" || choice == "paper" || choice == "scissors"){
             loop = false;
         }
+        else {
+            console.log("That's not a choice >:(");
+        }
     }
     //Return that value
     return choice;
