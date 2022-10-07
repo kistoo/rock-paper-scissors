@@ -36,6 +36,35 @@ function getPlayerChoice(){
 //Create function for the match which asks for 2 choices
 function playRound(playerSelection, computerSelection){
     //If the choices are the same tell the user it's a draw
+    if (playerSelection===computerSelection){
+        return ("It's a tie, you both have chosen "+playerSelection);
+    }
+    else{
+        if(playerSelection==="rock"){
+            if(computerSelection==="scissors"){
+                return ("You win: "+playerSelection+" beats "+computerSelection);
+            }
+            else if(computerSelection==="paper"){
+                return ("You lose:"+computerSelection+" beats "+playerSelection);
+            }
+        }
+        else if(playerSelection==="scissors"){
+            if(computerSelection==="paper"){
+                return ("You win: "+playerSelection+" beats "+computerSelection);
+            }
+            else if(computerSelection==="rock"){
+                return ("You lose:"+computerSelection+" beats "+playerSelection);
+            }
+        }
+        else if(playerSelection==="paper"){
+            if(computerSelection==="rock"){
+                return ("You win: "+playerSelection+" beats "+computerSelection);
+            }
+            else if(computerSelection==="scissors"){
+                return ("You lose:"+computerSelection+" beats "+playerSelection);
+            }
+        }
+    }
     //Evaluate everyelse choices where are not the same and tell the user if won or lost
 }
 //Create function game
@@ -54,7 +83,7 @@ function game(){
         wins++;
        } 
        else if (winner.includes("Lose")){
-        loses++;
+        loses++;scissors
        }
        else if (winner.includes("Tie")){
         ties++;
