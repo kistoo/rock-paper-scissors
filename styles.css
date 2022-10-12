@@ -4,6 +4,8 @@ body {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    background-color: #3316b8;
+    color: #eafd41;
 }
 
 h1 {
@@ -14,14 +16,6 @@ h1 {
 h2 {
     font-family: "Silkscreen",cursive;
     font-size: 40px;
-}
-
-p {
-
-}
-
-#header {
-
 }
 
 #buttons {
