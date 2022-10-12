@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Silkscreen&display=swap');
 body {
     display: flex;
     flex-direction: column;
@@ -6,11 +7,13 @@ body {
 }
 
 h1 {
-
+    font-family: "Silkscreen",cursive;
+    font-size: 60px;
 }
 
 h2 {
-
+    font-family: "Silkscreen",cursive;
+    font-size: 40px;
 }
 
 p {
@@ -22,11 +25,12 @@ p {
 }
 
 #buttons {
-
+    
 }
 
 #buttons button{
-
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 40px;
 }
 
 #game {
@@ -46,9 +50,11 @@ p {
 }
 
 #score div div {
-
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 70px;
 }
 
 #rounds {
-
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 30px;
 }
