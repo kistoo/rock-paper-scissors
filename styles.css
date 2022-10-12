@@ -19,12 +19,21 @@ h2 {
 }
 
 #buttons {
-    
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
 }
 
 #buttons button{
     font-family: "Roboto Condensed",sans-serif;
     font-size: 40px;
+    padding: 50px;
+    background-color: #eafd41;
+    color: #160b49;
+    width: 300px;
 }
 
 #game {
