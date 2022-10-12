@@ -18,10 +18,13 @@ h2 {
     font-size: 40px;
 }
 
+#header {
+    margin-top: -20px;
+}
+
 #buttons {
     display: flex;
     flex-direction: row;
-    padding: 40px;
     gap: 40px;
     text-align: center;
     justify-content: center;
@@ -30,7 +33,7 @@ h2 {
 #buttons button{
     font-family: "Roboto Condensed",sans-serif;
     font-size: 40px;
-    padding: 50px;
+    padding: 30px;
     background-color: #eafd41;
     color: #160b49;
     width: 300px;
@@ -39,7 +42,7 @@ h2 {
 #game {
     display: flex;
     flex-direction: column;
-    gap: 100px 0;
+    gap: 20px 0;
 }
 
 #score{
@@ -67,7 +70,7 @@ h2 {
 
 #rounds {
     font-family: "Roboto Condensed",sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     justify-content: center;
     align-items: center;
     display: flex;
