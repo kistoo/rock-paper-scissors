@@ -71,8 +71,22 @@ function playRound(playerChoice, game){
     if (game[0]<5){
         announcements.append(message);
         displayScore(game);  
-        game[0]++;
+        
     }
+    if (game[0]===5){
+        message.setAttribute("style","font-weight:700; font-size:40px");
+        if (game[1]===game[2]){
+            message.textContent = "IT'S A TIE";
+        }
+        if (game[1]<game[2]){
+            message.textContent = "YOU LOSE";
+        }
+        if (game[1]>game[2]){
+            message.textContent = "YOU WIN";
+        }
+        announcements.append(message);
+    }
+    game[0]++;
     return game;
 }
 
