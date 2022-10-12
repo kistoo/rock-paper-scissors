@@ -37,24 +37,34 @@ h2 {
 }
 
 #game {
-
+    display: flex;
+    flex-direction: column;
 }
 
 #game div{
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    gap: 0 400px ;
 }
+
 
 #score {
 
 }
 
 #score div {
-
+    display: flex;
+    flex-direction: column;
 }
 
 #score div div {
     font-family: "Roboto Condensed",sans-serif;
     font-size: 70px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
 }
 
 #rounds {
