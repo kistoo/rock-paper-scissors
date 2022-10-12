@@ -27,7 +27,7 @@ function getPlayerChoice(choice){
 //Create function to remove event listener after 5 rounds
 
 //Create function for the match which asks for 2 choices
-function playRound(playerChoice, game, buttons){
+function playRound(playerChoice, game){
     let playerSelection=getPlayerChoice(playerChoice);
     let computerSelection=getComputerChoice();
     let announcements=document.getElementById("rounds");
@@ -68,10 +68,11 @@ function playRound(playerChoice, game, buttons){
             }
         }
     }
-    announcements.append(message);
-    displayScore(game);
-    game[0]++;
-    endGame(game,buttons);
+    if (game[0]<5){
+        announcements.append(message);
+        displayScore(game);  
+        game[0]++;
+    }
     return game;
 }
 
@@ -83,23 +84,11 @@ function displayScore(game){
     iaScore.textContent=game[2];
 }
 
-//Create function for event listener for buttons
-function endGame(game,buttons){
-    if (game[0]===5){
-        buttons.forEach((button) => {
-            button.removeEventListener("click",()=>
-            game = playRound(button.textContent,game,buttons));
-        });
-    }
-    alert(game[0]);
-}
-
-
 let game = [0,0,0];//rounds,wins,loses
-displayScore(game); 
+displayScore(game);
 const buttons = document.querySelectorAll("button");
     buttons.forEach((button) => {
         button.addEventListener("click",()=>
-        game = playRound(button.textContent,game,buttons));
+        game = playRound(button.textContent,game));
     });
 
